@@ -1,10 +1,10 @@
 import React from "react";
 import CourseGoalItem from "./CourseGoalitems";
-import './CourseGoalList.css';
+import style from './CourseGoalList.module.css';
 
 const CourseGoalList = props => {
     return (
-        <ul className="goal-list">
+        <ul className={`${style['goal-list']}`} >
             {props.goalList.map(item => (
                 <CourseGoalItem
                     key={item.id}

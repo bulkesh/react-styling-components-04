@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To apply the style to particular component and you do not want your style will effect any other component. ## You can use Module naming conventions for your style file and import the css file and assign in variable
+## import style from '../styleName.module.css:
+className={style.class}
+### styleName.module.css
+
+## To apply the style to particular component and you do not want your style will effect any other component. ## You can use below package:
+### npm i --save styled-components
 ## Available Scripts
 
 In the project directory, you can run:

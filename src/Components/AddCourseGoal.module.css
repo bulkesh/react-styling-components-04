@@ -29,6 +29,7 @@
   }
   
   .form-control input {
+    background-color: transparent;
     display: block;
     width: 100%;
     border: 1px solid #ccc;
@@ -41,5 +42,14 @@
     outline: none;
     background: #fad0ec;
     border-color: #8b005d;
+  }
+
+  .form-control.invalid label{
+    color: red;
+  }
+
+  .form-control.invalid input{
+    border-color: red;
+    background-color: rgb(249, 179, 193);
   }
     
