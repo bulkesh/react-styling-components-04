@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To apply the style to particular component and you do not want your style will effect any other component. You can use Module naming conventions for your style file and import the css file and assign in variable
 ### import style from '../styleName.module.css
-### <div className={style.class}></div>
+### <\div className={style.class}><\/div>
 ### css file name -> styleName.module.css
 
 ## To apply the style to particular component and you do not want your style will effect any other component. You can also use below package:
