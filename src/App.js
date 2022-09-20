@@ -1,5 +1,5 @@
 
-import './App.css';
+import style from './App.module.css';
 import React, { useState } from 'react';
 import CourseGoalList from './Components/CourseGoalList';
 import AddCourseGoal from './Components/AddCourseGoal';
@@ -26,12 +26,12 @@ const App = () => {
       goalDisplay = (<CourseGoalList goalList={courseGoals} onGolalRemove={goalRemoveHandler} />)
   }
   return (
-    <div className="App">
-      <section id="goal-form">
+    <div >
+      <section id="goal-form" className={`${style['goal-form']}`}>
         <AddCourseGoal onAddGoal={addGoalHandler} />
       </section>
 
-      <section  id="goals">
+      <section  id="goals" className={`${style.goals}`}>
         {goalDisplay}
       </section>
     </div>
